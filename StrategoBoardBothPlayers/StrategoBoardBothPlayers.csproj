@@ -86,6 +86,45 @@
   <ItemGroup>
     <None Include="Resources\strategoBoardCut.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stratego9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stratego2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrategoS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrategoF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrategoB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lilpics.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
