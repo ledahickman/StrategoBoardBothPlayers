@@ -16,74 +16,37 @@ namespace StrategoBoardBothPlayers
         {
             InitializeComponent();
         }
-        //private void Form1_Load(object sender, EventArgs e)
-        //{
-        //    IDropTarget.AllowDrop = true;
-        //}
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        //The panelChanger event handlers are what control the drag and drop of the system. 
+        //With the way that they are designed, you can assign any of these handlers
+        //with the panel image drag-and-drop changes within this program.
+        private void panelChanger_MouseDown(object sender, MouseEventArgs e)
         {
-
+            Panel panelChanger = sender as Panel;
+            if (panelChanger.BackgroundImage != null)
+            {
+                panelChanger.DoDragDrop(panelChanger.BackgroundImage, DragDropEffects.Move);
+                panelChanger.BackgroundImage = null;
+            }
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void panelChanger_DragEnter(object sender, DragEventArgs e)
         {
-            
+            Panel panelChanger = sender as Panel;
+            e.Effect = DragDropEffects.Move;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelChanger_DragDrop(object sender, DragEventArgs e)
         {
-
+            Panel panelChanger = sender as Panel;
+            if (panelChanger.BackgroundImage == null)
+            {
+                panelChanger.BackgroundImage = (Image)e.Data.GetData(DataFormats.Bitmap);
+            }
+            else
+            {
+                throw (new Exception("Can't do that!"));
+            }
         }
 
-        private void cToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void of1ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void miner3ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void scout28Of8ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lieutenant5ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void scout2ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Stratego_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel33_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel51_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void major7ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -83,9 +83,29 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stratego10Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego10Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Stratego2 {
             get {
                 object obj = ResourceManager.GetObject("Stratego2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Stratego2Red {
+            get {
+                object obj = ResourceManager.GetObject("Stratego2Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +133,29 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Stratego3Red {
+            get {
+                object obj = ResourceManager.GetObject("Stratego3Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Stratego4 {
             get {
                 object obj = ResourceManager.GetObject("Stratego4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stratego4Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego4Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +173,29 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stratego5Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego5Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Stratego6 {
             get {
                 object obj = ResourceManager.GetObject("Stratego6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stratego6Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego6Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,6 +213,16 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stratego7Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego7Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Stratego8 {
             get {
                 object obj = ResourceManager.GetObject("Stratego8", resourceCulture);
@@ -163,9 +233,29 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stratego8Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego8Red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap stratego9 {
             get {
                 object obj = ResourceManager.GetObject("stratego9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stratego9Red {
+            get {
+                object obj = ResourceManager.GetObject("stratego9Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +293,16 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap strategoBRed {
+            get {
+                object obj = ResourceManager.GetObject("strategoBRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap StrategoF {
             get {
                 object obj = ResourceManager.GetObject("StrategoF", resourceCulture);
@@ -213,9 +313,29 @@ namespace StrategoBoardBothPlayers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap strategoFlagRed {
+            get {
+                object obj = ResourceManager.GetObject("strategoFlagRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap StrategoS {
             get {
                 object obj = ResourceManager.GetObject("StrategoS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap strategoSpyRed {
+            get {
+                object obj = ResourceManager.GetObject("strategoSpyRed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
