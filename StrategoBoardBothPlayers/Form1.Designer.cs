@@ -171,12 +171,12 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Info;
             this.richTextBox1.Location = new System.Drawing.Point(13, 99);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(283, 208);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
-
             // 
             // button2
             // 
@@ -190,6 +190,7 @@
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.SystemColors.Info;
             this.listView1.Location = new System.Drawing.Point(16, 327);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(279, 115);
@@ -213,7 +214,7 @@
             this.toolStripDropDownButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(869, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(891, 25);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -245,6 +246,7 @@
             this.marshalToolStripMenuItem.Name = "marshalToolStripMenuItem";
             this.marshalToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.marshalToolStripMenuItem.Text = "(10) Marshal ";
+            this.marshalToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // general9ToolStripMenuItem
             // 
@@ -252,6 +254,7 @@
             this.general9ToolStripMenuItem.Name = "general9ToolStripMenuItem";
             this.general9ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.general9ToolStripMenuItem.Text = "(9) General ";
+            this.general9ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // cToolStripMenuItem
             // 
@@ -259,7 +262,7 @@
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
             this.cToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cToolStripMenuItem.Text = "(8) Colonel 2 of 2";
-
+            this.cToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // major7ToolStripMenuItem
             // 
@@ -267,7 +270,7 @@
             this.major7ToolStripMenuItem.Name = "major7ToolStripMenuItem";
             this.major7ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.major7ToolStripMenuItem.Text = "(7) Major 3 of 3";
- 
+            this.major7ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // captain6ToolStripMenuItem
             // 
@@ -275,6 +278,7 @@
             this.captain6ToolStripMenuItem.Name = "captain6ToolStripMenuItem";
             this.captain6ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.captain6ToolStripMenuItem.Text = "(6) Captain 4 of 4";
+            this.captain6ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // lieutenant5ToolStripMenuItem
             // 
@@ -282,6 +286,7 @@
             this.lieutenant5ToolStripMenuItem.Name = "lieutenant5ToolStripMenuItem";
             this.lieutenant5ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.lieutenant5ToolStripMenuItem.Text = "(5) Lieutenant 4 of 4";
+            this.lieutenant5ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // sergeant4ToolStripMenuItem
             // 
@@ -289,6 +294,7 @@
             this.sergeant4ToolStripMenuItem.Name = "sergeant4ToolStripMenuItem";
             this.sergeant4ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.sergeant4ToolStripMenuItem.Text = "(4) Sergeant 4 of 4";
+            this.sergeant4ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // miner3ToolStripMenuItem
             // 
@@ -296,6 +302,7 @@
             this.miner3ToolStripMenuItem.Name = "miner3ToolStripMenuItem";
             this.miner3ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.miner3ToolStripMenuItem.Text = "(3) Miner 5 of 5";
+            this.miner3ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // miner3ToolStripMenuItem1
             // 
@@ -303,7 +310,7 @@
             this.miner3ToolStripMenuItem1.Name = "miner3ToolStripMenuItem1";
             this.miner3ToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
             this.miner3ToolStripMenuItem1.Text = "(2) Scout 8 of 8";
-
+            this.miner3ToolStripMenuItem1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // miner3ToolStripMenuItem2
             // 
@@ -311,6 +318,7 @@
             this.miner3ToolStripMenuItem2.Name = "miner3ToolStripMenuItem2";
             this.miner3ToolStripMenuItem2.Size = new System.Drawing.Size(179, 22);
             this.miner3ToolStripMenuItem2.Text = "Spy ";
+            this.miner3ToolStripMenuItem2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // miner3ToolStripMenuItem3
             // 
@@ -318,6 +326,7 @@
             this.miner3ToolStripMenuItem3.Name = "miner3ToolStripMenuItem3";
             this.miner3ToolStripMenuItem3.Size = new System.Drawing.Size(179, 22);
             this.miner3ToolStripMenuItem3.Text = "Flag ";
+            this.miner3ToolStripMenuItem3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // bombToolStripMenuItem
             // 
@@ -325,6 +334,7 @@
             this.bombToolStripMenuItem.Name = "bombToolStripMenuItem";
             this.bombToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.bombToolStripMenuItem.Text = "Bomb";
+            this.bombToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // toolStripDropDownButton2
             // 
@@ -354,6 +364,7 @@
             this.marshalToolStripMenuItem1.Name = "marshalToolStripMenuItem1";
             this.marshalToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
             this.marshalToolStripMenuItem1.Text = "(10) Marshal";
+            this.marshalToolStripMenuItem1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // generalToolStripMenuItem
             // 
@@ -361,6 +372,7 @@
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
             this.generalToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.generalToolStripMenuItem.Text = "(9) General";
+            this.generalToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // cononel2Of2ToolStripMenuItem
             // 
@@ -368,6 +380,7 @@
             this.cononel2Of2ToolStripMenuItem.Name = "cononel2Of2ToolStripMenuItem";
             this.cononel2Of2ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cononel2Of2ToolStripMenuItem.Text = "(8) Cononel 2 of 2";
+            this.cononel2Of2ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // major3Of3ToolStripMenuItem
             // 
@@ -375,6 +388,7 @@
             this.major3Of3ToolStripMenuItem.Name = "major3Of3ToolStripMenuItem";
             this.major3Of3ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.major3Of3ToolStripMenuItem.Text = "(7) Major 3 of 3";
+            this.major3Of3ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // captain4Of4ToolStripMenuItem
             // 
@@ -382,6 +396,7 @@
             this.captain4Of4ToolStripMenuItem.Name = "captain4Of4ToolStripMenuItem";
             this.captain4Of4ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.captain4Of4ToolStripMenuItem.Text = "(6) Captain 4 of 4";
+            this.captain4Of4ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // lieutenant4Of4ToolStripMenuItem
             // 
@@ -389,6 +404,7 @@
             this.lieutenant4Of4ToolStripMenuItem.Name = "lieutenant4Of4ToolStripMenuItem";
             this.lieutenant4Of4ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.lieutenant4Of4ToolStripMenuItem.Text = "(5) Lieutenant 4 of 4";
+            this.lieutenant4Of4ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // sergent4Of4ToolStripMenuItem
             // 
@@ -396,6 +412,7 @@
             this.sergent4Of4ToolStripMenuItem.Name = "sergent4Of4ToolStripMenuItem";
             this.sergent4Of4ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.sergent4Of4ToolStripMenuItem.Text = "(4) Sergent 4 of 4";
+            this.sergent4Of4ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // miner5Of5ToolStripMenuItem
             // 
@@ -403,6 +420,7 @@
             this.miner5Of5ToolStripMenuItem.Name = "miner5Of5ToolStripMenuItem";
             this.miner5Of5ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.miner5Of5ToolStripMenuItem.Text = "(3) Miner 5 of 5";
+            this.miner5Of5ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // scout8Of8ToolStripMenuItem
             // 
@@ -410,6 +428,7 @@
             this.scout8Of8ToolStripMenuItem.Name = "scout8Of8ToolStripMenuItem";
             this.scout8Of8ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.scout8Of8ToolStripMenuItem.Text = "(2) Scout 8 of 8";
+            this.scout8Of8ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // spyToolStripMenuItem
             // 
@@ -417,6 +436,7 @@
             this.spyToolStripMenuItem.Name = "spyToolStripMenuItem";
             this.spyToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.spyToolStripMenuItem.Text = "Spy";
+            this.spyToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // flagToolStripMenuItem
             // 
@@ -424,6 +444,7 @@
             this.flagToolStripMenuItem.Name = "flagToolStripMenuItem";
             this.flagToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.flagToolStripMenuItem.Text = "Flag";
+            this.flagToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // bombToolStripMenuItem1
             // 
@@ -431,6 +452,7 @@
             this.bombToolStripMenuItem1.Name = "bombToolStripMenuItem1";
             this.bombToolStripMenuItem1.Size = new System.Drawing.Size(179, 22);
             this.bombToolStripMenuItem1.Text = "Bomb";
+            this.bombToolStripMenuItem1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // tableLayoutPanel1
             // 
@@ -540,7 +562,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel91, 7, 9);
             this.tableLayoutPanel1.Controls.Add(this.panel92, 8, 9);
             this.tableLayoutPanel1.Controls.Add(this.panel93, 9, 9);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(358, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(363, 47);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 10;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -555,7 +577,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(490, 489);
             this.tableLayoutPanel1.TabIndex = 0;
- 
             // 
             // panel1
             // 
@@ -568,7 +589,6 @@
             this.panel1.TabIndex = 0;
             this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.panelChanger_DragDrop);
             this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.panelChanger_DragEnter);
- 
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelChanger_MouseDown);
             // 
             // panel2
@@ -964,7 +984,6 @@
             this.panel33.TabIndex = 32;
             this.panel33.DragDrop += new System.Windows.Forms.DragEventHandler(this.panelChanger_DragDrop);
             this.panel33.DragEnter += new System.Windows.Forms.DragEventHandler(this.panelChanger_DragEnter);
-
             this.panel33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelChanger_MouseDown);
             // 
             // panel34
@@ -1169,7 +1188,6 @@
             this.panel51.TabIndex = 49;
             this.panel51.DragDrop += new System.Windows.Forms.DragEventHandler(this.panelChanger_DragDrop);
             this.panel51.DragEnter += new System.Windows.Forms.DragEventHandler(this.panelChanger_DragEnter);
- 
             this.panel51.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelChanger_MouseDown);
             // 
             // panel52
@@ -1679,7 +1697,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.YellowGreen;
-            this.ClientSize = new System.Drawing.Size(869, 512);
+            this.ClientSize = new System.Drawing.Size(891, 587);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
@@ -1690,8 +1708,6 @@
             this.Name = "Stratego";
             this.Text = "Stratego";
             this.TransparencyKey = System.Drawing.Color.Transparent;
-
-
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -22,6 +22,7 @@ namespace StrategoBoardBothPlayers
         private void panelChanger_MouseDown(object sender, MouseEventArgs e)
         {
             Panel panelChanger = sender as Panel;
+
             if (panelChanger.BackgroundImage != null)
             {
                 panelChanger.DoDragDrop(panelChanger.BackgroundImage, DragDropEffects.Move);
@@ -48,5 +49,20 @@ namespace StrategoBoardBothPlayers
             }
         }
 
+        private void generalToolStripMenuItem_MouseDown(object sender, MouseEventArgs e)
+        {
+            ToolStripItem menuItem = sender as ToolStripItem;
+            Panel panelChanger = new Panel();
+
+            panelChanger.BackgroundImage = menuItem.Image;
+            panelChanger.DoDragDrop(panelChanger.BackgroundImage, DragDropEffects.Move);
+            panelChanger.BackgroundImage = null;
+        }
+
+        //private void panelChanger_MouseMove(object sender, MouseEventArgs e)
+        //{
+            //Panel panelChanger = sender as Panel;
+            //Cursor.Current = new Cursor((Image)panelChanger.BackgroundImage);
+        //}
     }
 }
