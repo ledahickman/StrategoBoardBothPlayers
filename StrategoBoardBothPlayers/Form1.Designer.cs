@@ -247,6 +247,8 @@
             this.marshalToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.marshalToolStripMenuItem.Text = "(10) Marshal ";
             this.marshalToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
+            //if(action listener on board == true, showing it received a pic of the marshal){toolStrip.Text - 1; }
+
             // 
             // general9ToolStripMenuItem
             // 
@@ -302,6 +304,7 @@
             this.miner3ToolStripMenuItem.Name = "miner3ToolStripMenuItem";
             this.miner3ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.miner3ToolStripMenuItem.Text = "(3) Miner 5 of 5";
+            this.miner3ToolStripMenuItem.Click += new System.EventHandler(this.miner3ToolStripMenuItem_Click);
             this.miner3ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // miner3ToolStripMenuItem1
@@ -380,6 +383,7 @@
             this.cononel2Of2ToolStripMenuItem.Name = "cononel2Of2ToolStripMenuItem";
             this.cononel2Of2ToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cononel2Of2ToolStripMenuItem.Text = "(8) Cononel 2 of 2";
+            this.cononel2Of2ToolStripMenuItem.Click += new System.EventHandler(this.cononel2Of2ToolStripMenuItem_Click);
             this.cononel2Of2ToolStripMenuItem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.generalToolStripMenuItem_MouseDown);
             // 
             // major3Of3ToolStripMenuItem
@@ -457,6 +461,7 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AllowDrop = true;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.strategoBoardCut;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 10;
@@ -577,10 +582,12 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(490, 489);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // panel1
             // 
             this.panel1.AllowDrop = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego3;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Location = new System.Drawing.Point(5, 5);
@@ -594,6 +601,7 @@
             // panel2
             // 
             this.panel2.AllowDrop = true;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego3;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(53, 5);
@@ -607,6 +615,7 @@
             // panel3
             // 
             this.panel3.AllowDrop = true;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Location = new System.Drawing.Point(101, 5);
             this.panel3.Name = "panel3";
@@ -619,6 +628,7 @@
             // panel4
             // 
             this.panel4.AllowDrop = true;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego2;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Location = new System.Drawing.Point(149, 5);
@@ -632,6 +642,7 @@
             // panel5
             // 
             this.panel5.AllowDrop = true;
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego4;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.Location = new System.Drawing.Point(197, 5);
@@ -645,6 +656,7 @@
             // panel6
             // 
             this.panel6.AllowDrop = true;
+            this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego5;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Location = new System.Drawing.Point(245, 5);
@@ -658,6 +670,7 @@
             // panel7
             // 
             this.panel7.AllowDrop = true;
+            this.panel7.BackColor = System.Drawing.Color.Transparent;
             this.panel7.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego6;
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel7.Location = new System.Drawing.Point(293, 5);
@@ -671,6 +684,7 @@
             // panel8
             // 
             this.panel8.AllowDrop = true;
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
             this.panel8.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.StrategoF;
             this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel8.Location = new System.Drawing.Point(341, 5);
@@ -684,6 +698,7 @@
             // panel9
             // 
             this.panel9.AllowDrop = true;
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego7;
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.Location = new System.Drawing.Point(389, 5);
@@ -697,6 +712,7 @@
             // panel10
             // 
             this.panel10.AllowDrop = true;
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego8;
             this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel10.Location = new System.Drawing.Point(437, 5);
@@ -710,6 +726,7 @@
             // panel11
             // 
             this.panel11.AllowDrop = true;
+            this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.stratego9;
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel11.Location = new System.Drawing.Point(5, 53);
@@ -723,6 +740,7 @@
             // panel12
             // 
             this.panel12.AllowDrop = true;
+            this.panel12.BackColor = System.Drawing.Color.Transparent;
             this.panel12.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.StrategoB;
             this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel12.Location = new System.Drawing.Point(53, 53);
@@ -736,6 +754,7 @@
             // panel13
             // 
             this.panel13.AllowDrop = true;
+            this.panel13.BackColor = System.Drawing.Color.Transparent;
             this.panel13.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.StrategoS;
             this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel13.Location = new System.Drawing.Point(101, 53);
@@ -749,6 +768,7 @@
             // panel14
             // 
             this.panel14.AllowDrop = true;
+            this.panel14.BackColor = System.Drawing.Color.Transparent;
             this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel14.Location = new System.Drawing.Point(149, 53);
             this.panel14.Name = "panel14";
@@ -761,6 +781,7 @@
             // panel15
             // 
             this.panel15.AllowDrop = true;
+            this.panel15.BackColor = System.Drawing.Color.Transparent;
             this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel15.Location = new System.Drawing.Point(197, 53);
             this.panel15.Name = "panel15";
@@ -773,6 +794,7 @@
             // panel16
             // 
             this.panel16.AllowDrop = true;
+            this.panel16.BackColor = System.Drawing.Color.Transparent;
             this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel16.Location = new System.Drawing.Point(245, 53);
             this.panel16.Name = "panel16";
@@ -785,6 +807,7 @@
             // panel17
             // 
             this.panel17.AllowDrop = true;
+            this.panel17.BackColor = System.Drawing.Color.Transparent;
             this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel17.Location = new System.Drawing.Point(293, 53);
             this.panel17.Name = "panel17";
@@ -797,6 +820,7 @@
             // panel18
             // 
             this.panel18.AllowDrop = true;
+            this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel18.Location = new System.Drawing.Point(341, 53);
             this.panel18.Name = "panel18";
@@ -809,6 +833,7 @@
             // panel19
             // 
             this.panel19.AllowDrop = true;
+            this.panel19.BackColor = System.Drawing.Color.Transparent;
             this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel19.Location = new System.Drawing.Point(389, 53);
             this.panel19.Name = "panel19";
@@ -821,6 +846,7 @@
             // panel20
             // 
             this.panel20.AllowDrop = true;
+            this.panel20.BackColor = System.Drawing.Color.Transparent;
             this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel20.Location = new System.Drawing.Point(437, 53);
             this.panel20.Name = "panel20";
@@ -833,6 +859,7 @@
             // panel21
             // 
             this.panel21.AllowDrop = true;
+            this.panel21.BackColor = System.Drawing.Color.Transparent;
             this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel21.Location = new System.Drawing.Point(5, 101);
             this.panel21.Name = "panel21";
@@ -845,6 +872,7 @@
             // panel22
             // 
             this.panel22.AllowDrop = true;
+            this.panel22.BackColor = System.Drawing.Color.Transparent;
             this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel22.Location = new System.Drawing.Point(53, 101);
             this.panel22.Name = "panel22";
@@ -857,6 +885,7 @@
             // panel23
             // 
             this.panel23.AllowDrop = true;
+            this.panel23.BackColor = System.Drawing.Color.Transparent;
             this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel23.Location = new System.Drawing.Point(101, 101);
             this.panel23.Name = "panel23";
@@ -869,6 +898,7 @@
             // panel24
             // 
             this.panel24.AllowDrop = true;
+            this.panel24.BackColor = System.Drawing.Color.Transparent;
             this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel24.Location = new System.Drawing.Point(149, 101);
             this.panel24.Name = "panel24";
@@ -881,6 +911,7 @@
             // panel25
             // 
             this.panel25.AllowDrop = true;
+            this.panel25.BackColor = System.Drawing.Color.Transparent;
             this.panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel25.Location = new System.Drawing.Point(197, 101);
             this.panel25.Name = "panel25";
@@ -893,6 +924,7 @@
             // panel26
             // 
             this.panel26.AllowDrop = true;
+            this.panel26.BackColor = System.Drawing.Color.Transparent;
             this.panel26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel26.Location = new System.Drawing.Point(245, 101);
             this.panel26.Name = "panel26";
@@ -905,6 +937,7 @@
             // panel27
             // 
             this.panel27.AllowDrop = true;
+            this.panel27.BackColor = System.Drawing.Color.Transparent;
             this.panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel27.Location = new System.Drawing.Point(293, 101);
             this.panel27.Name = "panel27";
@@ -917,6 +950,7 @@
             // panel28
             // 
             this.panel28.AllowDrop = true;
+            this.panel28.BackColor = System.Drawing.Color.Transparent;
             this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel28.Location = new System.Drawing.Point(341, 101);
             this.panel28.Name = "panel28";
@@ -929,6 +963,7 @@
             // panel29
             // 
             this.panel29.AllowDrop = true;
+            this.panel29.BackColor = System.Drawing.Color.Transparent;
             this.panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel29.Location = new System.Drawing.Point(389, 101);
             this.panel29.Name = "panel29";
@@ -941,6 +976,7 @@
             // panel30
             // 
             this.panel30.AllowDrop = true;
+            this.panel30.BackColor = System.Drawing.Color.Transparent;
             this.panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel30.Location = new System.Drawing.Point(437, 101);
             this.panel30.Name = "panel30";
@@ -953,6 +989,7 @@
             // panel31
             // 
             this.panel31.AllowDrop = true;
+            this.panel31.BackColor = System.Drawing.Color.Transparent;
             this.panel31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel31.Location = new System.Drawing.Point(5, 149);
             this.panel31.Name = "panel31";
@@ -965,6 +1002,7 @@
             // panel32
             // 
             this.panel32.AllowDrop = true;
+            this.panel32.BackColor = System.Drawing.Color.Transparent;
             this.panel32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel32.Location = new System.Drawing.Point(53, 149);
             this.panel32.Name = "panel32";
@@ -977,6 +1015,7 @@
             // panel33
             // 
             this.panel33.AllowDrop = true;
+            this.panel33.BackColor = System.Drawing.Color.Transparent;
             this.panel33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel33.Location = new System.Drawing.Point(101, 149);
             this.panel33.Name = "panel33";
@@ -989,6 +1028,7 @@
             // panel34
             // 
             this.panel34.AllowDrop = true;
+            this.panel34.BackColor = System.Drawing.Color.Transparent;
             this.panel34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel34.Location = new System.Drawing.Point(149, 149);
             this.panel34.Name = "panel34";
@@ -1001,6 +1041,7 @@
             // panel35
             // 
             this.panel35.AllowDrop = true;
+            this.panel35.BackColor = System.Drawing.Color.Transparent;
             this.panel35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel35.Location = new System.Drawing.Point(197, 149);
             this.panel35.Name = "panel35";
@@ -1013,6 +1054,7 @@
             // panel36
             // 
             this.panel36.AllowDrop = true;
+            this.panel36.BackColor = System.Drawing.Color.Transparent;
             this.panel36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel36.Location = new System.Drawing.Point(245, 149);
             this.panel36.Name = "panel36";
@@ -1025,6 +1067,7 @@
             // panel37
             // 
             this.panel37.AllowDrop = true;
+            this.panel37.BackColor = System.Drawing.Color.Transparent;
             this.panel37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel37.Location = new System.Drawing.Point(293, 149);
             this.panel37.Name = "panel37";
@@ -1037,6 +1080,7 @@
             // panel38
             // 
             this.panel38.AllowDrop = true;
+            this.panel38.BackColor = System.Drawing.Color.Transparent;
             this.panel38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel38.Location = new System.Drawing.Point(341, 149);
             this.panel38.Name = "panel38";
@@ -1049,6 +1093,7 @@
             // panel39
             // 
             this.panel39.AllowDrop = true;
+            this.panel39.BackColor = System.Drawing.Color.Transparent;
             this.panel39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel39.Location = new System.Drawing.Point(389, 149);
             this.panel39.Name = "panel39";
@@ -1061,6 +1106,7 @@
             // panel40
             // 
             this.panel40.AllowDrop = true;
+            this.panel40.BackColor = System.Drawing.Color.Transparent;
             this.panel40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel40.Location = new System.Drawing.Point(437, 149);
             this.panel40.Name = "panel40";
@@ -1073,6 +1119,7 @@
             // panel41
             // 
             this.panel41.AllowDrop = true;
+            this.panel41.BackColor = System.Drawing.Color.Transparent;
             this.panel41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel41.Location = new System.Drawing.Point(5, 197);
             this.panel41.Name = "panel41";
@@ -1085,6 +1132,7 @@
             // panel42
             // 
             this.panel42.AllowDrop = true;
+            this.panel42.BackColor = System.Drawing.Color.Transparent;
             this.panel42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel42.Location = new System.Drawing.Point(53, 197);
             this.panel42.Name = "panel42";
@@ -1097,6 +1145,7 @@
             // panel43
             // 
             this.panel43.AllowDrop = true;
+            this.panel43.BackColor = System.Drawing.Color.Transparent;
             this.panel43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel43.Location = new System.Drawing.Point(197, 197);
             this.panel43.Name = "panel43";
@@ -1109,6 +1158,7 @@
             // panel44
             // 
             this.panel44.AllowDrop = true;
+            this.panel44.BackColor = System.Drawing.Color.Transparent;
             this.panel44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel44.Location = new System.Drawing.Point(245, 197);
             this.panel44.Name = "panel44";
@@ -1121,6 +1171,7 @@
             // panel45
             // 
             this.panel45.AllowDrop = true;
+            this.panel45.BackColor = System.Drawing.Color.Transparent;
             this.panel45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel45.Location = new System.Drawing.Point(389, 197);
             this.panel45.Name = "panel45";
@@ -1133,6 +1184,7 @@
             // panel46
             // 
             this.panel46.AllowDrop = true;
+            this.panel46.BackColor = System.Drawing.Color.Transparent;
             this.panel46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel46.Location = new System.Drawing.Point(437, 197);
             this.panel46.Name = "panel46";
@@ -1145,6 +1197,7 @@
             // panel47
             // 
             this.panel47.AllowDrop = true;
+            this.panel47.BackColor = System.Drawing.Color.Transparent;
             this.panel47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel47.Location = new System.Drawing.Point(5, 245);
             this.panel47.Name = "panel47";
@@ -1157,6 +1210,7 @@
             // panel48
             // 
             this.panel48.AllowDrop = true;
+            this.panel48.BackColor = System.Drawing.Color.Transparent;
             this.panel48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel48.Location = new System.Drawing.Point(53, 245);
             this.panel48.Name = "panel48";
@@ -1169,6 +1223,7 @@
             // panel49
             // 
             this.panel49.AllowDrop = true;
+            this.panel49.BackColor = System.Drawing.Color.Transparent;
             this.panel49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel49.Location = new System.Drawing.Point(197, 245);
             this.panel49.Name = "panel49";
@@ -1181,6 +1236,7 @@
             // panel51
             // 
             this.panel51.AllowDrop = true;
+            this.panel51.BackColor = System.Drawing.Color.Transparent;
             this.panel51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel51.Location = new System.Drawing.Point(245, 245);
             this.panel51.Name = "panel51";
@@ -1193,6 +1249,7 @@
             // panel52
             // 
             this.panel52.AllowDrop = true;
+            this.panel52.BackColor = System.Drawing.Color.Transparent;
             this.panel52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel52.Location = new System.Drawing.Point(389, 245);
             this.panel52.Name = "panel52";
@@ -1205,6 +1262,7 @@
             // panel53
             // 
             this.panel53.AllowDrop = true;
+            this.panel53.BackColor = System.Drawing.Color.Transparent;
             this.panel53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel53.Location = new System.Drawing.Point(437, 245);
             this.panel53.Name = "panel53";
@@ -1217,6 +1275,7 @@
             // panel54
             // 
             this.panel54.AllowDrop = true;
+            this.panel54.BackColor = System.Drawing.Color.Transparent;
             this.panel54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel54.Location = new System.Drawing.Point(5, 293);
             this.panel54.Name = "panel54";
@@ -1229,6 +1288,7 @@
             // panel55
             // 
             this.panel55.AllowDrop = true;
+            this.panel55.BackColor = System.Drawing.Color.Transparent;
             this.panel55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel55.Location = new System.Drawing.Point(53, 293);
             this.panel55.Name = "panel55";
@@ -1241,6 +1301,7 @@
             // panel56
             // 
             this.panel56.AllowDrop = true;
+            this.panel56.BackColor = System.Drawing.Color.Transparent;
             this.panel56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel56.Location = new System.Drawing.Point(101, 293);
             this.panel56.Name = "panel56";
@@ -1253,6 +1314,7 @@
             // panel57
             // 
             this.panel57.AllowDrop = true;
+            this.panel57.BackColor = System.Drawing.Color.Transparent;
             this.panel57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel57.Location = new System.Drawing.Point(149, 293);
             this.panel57.Name = "panel57";
@@ -1265,6 +1327,7 @@
             // panel58
             // 
             this.panel58.AllowDrop = true;
+            this.panel58.BackColor = System.Drawing.Color.Transparent;
             this.panel58.BackgroundImage = global::StrategoBoardBothPlayers.Properties.Resources.Stratego2Red;
             this.panel58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel58.Location = new System.Drawing.Point(197, 293);
@@ -1278,6 +1341,7 @@
             // panel59
             // 
             this.panel59.AllowDrop = true;
+            this.panel59.BackColor = System.Drawing.Color.Transparent;
             this.panel59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel59.Location = new System.Drawing.Point(245, 293);
             this.panel59.Name = "panel59";
@@ -1290,6 +1354,7 @@
             // panel60
             // 
             this.panel60.AllowDrop = true;
+            this.panel60.BackColor = System.Drawing.Color.Transparent;
             this.panel60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel60.Location = new System.Drawing.Point(293, 293);
             this.panel60.Name = "panel60";
@@ -1302,6 +1367,7 @@
             // panel61
             // 
             this.panel61.AllowDrop = true;
+            this.panel61.BackColor = System.Drawing.Color.Transparent;
             this.panel61.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel61.Location = new System.Drawing.Point(341, 293);
             this.panel61.Name = "panel61";
@@ -1314,6 +1380,7 @@
             // panel62
             // 
             this.panel62.AllowDrop = true;
+            this.panel62.BackColor = System.Drawing.Color.Transparent;
             this.panel62.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel62.Location = new System.Drawing.Point(389, 293);
             this.panel62.Name = "panel62";
@@ -1326,6 +1393,7 @@
             // panel63
             // 
             this.panel63.AllowDrop = true;
+            this.panel63.BackColor = System.Drawing.Color.Transparent;
             this.panel63.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel63.Location = new System.Drawing.Point(437, 293);
             this.panel63.Name = "panel63";
@@ -1338,6 +1406,7 @@
             // panel64
             // 
             this.panel64.AllowDrop = true;
+            this.panel64.BackColor = System.Drawing.Color.Transparent;
             this.panel64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel64.Location = new System.Drawing.Point(5, 341);
             this.panel64.Name = "panel64";
@@ -1350,6 +1419,7 @@
             // panel65
             // 
             this.panel65.AllowDrop = true;
+            this.panel65.BackColor = System.Drawing.Color.Transparent;
             this.panel65.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel65.Location = new System.Drawing.Point(53, 341);
             this.panel65.Name = "panel65";
@@ -1362,6 +1432,7 @@
             // panel66
             // 
             this.panel66.AllowDrop = true;
+            this.panel66.BackColor = System.Drawing.Color.Transparent;
             this.panel66.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel66.Location = new System.Drawing.Point(101, 341);
             this.panel66.Name = "panel66";
@@ -1374,6 +1445,7 @@
             // panel67
             // 
             this.panel67.AllowDrop = true;
+            this.panel67.BackColor = System.Drawing.Color.Transparent;
             this.panel67.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel67.Location = new System.Drawing.Point(149, 341);
             this.panel67.Name = "panel67";
@@ -1386,6 +1458,7 @@
             // panel68
             // 
             this.panel68.AllowDrop = true;
+            this.panel68.BackColor = System.Drawing.Color.Transparent;
             this.panel68.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel68.Location = new System.Drawing.Point(197, 341);
             this.panel68.Name = "panel68";
@@ -1398,6 +1471,7 @@
             // panel69
             // 
             this.panel69.AllowDrop = true;
+            this.panel69.BackColor = System.Drawing.Color.Transparent;
             this.panel69.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel69.Location = new System.Drawing.Point(245, 341);
             this.panel69.Name = "panel69";
@@ -1410,6 +1484,7 @@
             // panel70
             // 
             this.panel70.AllowDrop = true;
+            this.panel70.BackColor = System.Drawing.Color.Transparent;
             this.panel70.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel70.Location = new System.Drawing.Point(293, 341);
             this.panel70.Name = "panel70";
@@ -1422,6 +1497,7 @@
             // panel71
             // 
             this.panel71.AllowDrop = true;
+            this.panel71.BackColor = System.Drawing.Color.Transparent;
             this.panel71.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel71.Location = new System.Drawing.Point(341, 341);
             this.panel71.Name = "panel71";
@@ -1434,6 +1510,7 @@
             // panel72
             // 
             this.panel72.AllowDrop = true;
+            this.panel72.BackColor = System.Drawing.Color.Transparent;
             this.panel72.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel72.Location = new System.Drawing.Point(389, 341);
             this.panel72.Name = "panel72";
@@ -1446,6 +1523,7 @@
             // panel73
             // 
             this.panel73.AllowDrop = true;
+            this.panel73.BackColor = System.Drawing.Color.Transparent;
             this.panel73.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel73.Location = new System.Drawing.Point(437, 341);
             this.panel73.Name = "panel73";
@@ -1458,6 +1536,7 @@
             // panel74
             // 
             this.panel74.AllowDrop = true;
+            this.panel74.BackColor = System.Drawing.Color.Transparent;
             this.panel74.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel74.Location = new System.Drawing.Point(5, 389);
             this.panel74.Name = "panel74";
@@ -1470,6 +1549,7 @@
             // panel75
             // 
             this.panel75.AllowDrop = true;
+            this.panel75.BackColor = System.Drawing.Color.Transparent;
             this.panel75.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel75.Location = new System.Drawing.Point(53, 389);
             this.panel75.Name = "panel75";
@@ -1482,6 +1562,7 @@
             // panel76
             // 
             this.panel76.AllowDrop = true;
+            this.panel76.BackColor = System.Drawing.Color.Transparent;
             this.panel76.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel76.Location = new System.Drawing.Point(101, 389);
             this.panel76.Name = "panel76";
@@ -1494,6 +1575,7 @@
             // panel77
             // 
             this.panel77.AllowDrop = true;
+            this.panel77.BackColor = System.Drawing.Color.Transparent;
             this.panel77.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel77.Location = new System.Drawing.Point(149, 389);
             this.panel77.Name = "panel77";
@@ -1506,6 +1588,7 @@
             // panel78
             // 
             this.panel78.AllowDrop = true;
+            this.panel78.BackColor = System.Drawing.Color.Transparent;
             this.panel78.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel78.Location = new System.Drawing.Point(197, 389);
             this.panel78.Name = "panel78";
@@ -1518,6 +1601,7 @@
             // panel79
             // 
             this.panel79.AllowDrop = true;
+            this.panel79.BackColor = System.Drawing.Color.Transparent;
             this.panel79.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel79.Location = new System.Drawing.Point(245, 389);
             this.panel79.Name = "panel79";
@@ -1530,6 +1614,7 @@
             // panel80
             // 
             this.panel80.AllowDrop = true;
+            this.panel80.BackColor = System.Drawing.Color.Transparent;
             this.panel80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel80.Location = new System.Drawing.Point(293, 389);
             this.panel80.Name = "panel80";
@@ -1542,6 +1627,7 @@
             // panel81
             // 
             this.panel81.AllowDrop = true;
+            this.panel81.BackColor = System.Drawing.Color.Transparent;
             this.panel81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel81.Location = new System.Drawing.Point(341, 389);
             this.panel81.Name = "panel81";
@@ -1554,6 +1640,7 @@
             // panel82
             // 
             this.panel82.AllowDrop = true;
+            this.panel82.BackColor = System.Drawing.Color.Transparent;
             this.panel82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel82.Location = new System.Drawing.Point(389, 389);
             this.panel82.Name = "panel82";
@@ -1566,6 +1653,7 @@
             // panel83
             // 
             this.panel83.AllowDrop = true;
+            this.panel83.BackColor = System.Drawing.Color.Transparent;
             this.panel83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel83.Location = new System.Drawing.Point(437, 389);
             this.panel83.Name = "panel83";
@@ -1578,6 +1666,7 @@
             // panel84
             // 
             this.panel84.AllowDrop = true;
+            this.panel84.BackColor = System.Drawing.Color.Transparent;
             this.panel84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel84.Location = new System.Drawing.Point(5, 437);
             this.panel84.Name = "panel84";
@@ -1590,6 +1679,7 @@
             // panel85
             // 
             this.panel85.AllowDrop = true;
+            this.panel85.BackColor = System.Drawing.Color.Transparent;
             this.panel85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel85.Location = new System.Drawing.Point(53, 437);
             this.panel85.Name = "panel85";
@@ -1602,6 +1692,7 @@
             // panel86
             // 
             this.panel86.AllowDrop = true;
+            this.panel86.BackColor = System.Drawing.Color.Transparent;
             this.panel86.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel86.Location = new System.Drawing.Point(101, 437);
             this.panel86.Name = "panel86";
@@ -1614,6 +1705,7 @@
             // panel87
             // 
             this.panel87.AllowDrop = true;
+            this.panel87.BackColor = System.Drawing.Color.Transparent;
             this.panel87.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel87.Location = new System.Drawing.Point(149, 437);
             this.panel87.Name = "panel87";
@@ -1626,6 +1718,7 @@
             // panel88
             // 
             this.panel88.AllowDrop = true;
+            this.panel88.BackColor = System.Drawing.Color.Transparent;
             this.panel88.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel88.Location = new System.Drawing.Point(197, 437);
             this.panel88.Name = "panel88";
@@ -1638,6 +1731,7 @@
             // panel89
             // 
             this.panel89.AllowDrop = true;
+            this.panel89.BackColor = System.Drawing.Color.Transparent;
             this.panel89.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel89.Location = new System.Drawing.Point(245, 437);
             this.panel89.Name = "panel89";
@@ -1650,6 +1744,7 @@
             // panel90
             // 
             this.panel90.AllowDrop = true;
+            this.panel90.BackColor = System.Drawing.Color.Transparent;
             this.panel90.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel90.Location = new System.Drawing.Point(293, 437);
             this.panel90.Name = "panel90";
@@ -1662,6 +1757,7 @@
             // panel91
             // 
             this.panel91.AllowDrop = true;
+            this.panel91.BackColor = System.Drawing.Color.Transparent;
             this.panel91.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel91.Location = new System.Drawing.Point(341, 437);
             this.panel91.Name = "panel91";
@@ -1674,6 +1770,7 @@
             // panel92
             // 
             this.panel92.AllowDrop = true;
+            this.panel92.BackColor = System.Drawing.Color.Transparent;
             this.panel92.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel92.Location = new System.Drawing.Point(389, 437);
             this.panel92.Name = "panel92";
@@ -1686,6 +1783,7 @@
             // panel93
             // 
             this.panel93.AllowDrop = true;
+            this.panel93.BackColor = System.Drawing.Color.Transparent;
             this.panel93.Location = new System.Drawing.Point(437, 437);
             this.panel93.Name = "panel93";
             this.panel93.Size = new System.Drawing.Size(48, 47);

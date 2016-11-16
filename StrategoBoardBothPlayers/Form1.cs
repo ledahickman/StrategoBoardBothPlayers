@@ -46,6 +46,7 @@ namespace StrategoBoardBothPlayers
             else
             {
                 throw (new Exception("Can't do that!"));
+                
             }
         }
 
@@ -59,10 +60,25 @@ namespace StrategoBoardBothPlayers
             panelChanger.BackgroundImage = null;
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void miner3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cononel2Of2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //private void panelChanger_MouseMove(object sender, MouseEventArgs e)
         //{
-            //Panel panelChanger = sender as Panel;
-            //Cursor.Current = new Cursor((Image)panelChanger.BackgroundImage);
+        //Panel panelChanger = sender as Panel;
+        //Cursor.Current = new Cursor((Image)panelChanger.BackgroundImage);
         //}
     }
 }
